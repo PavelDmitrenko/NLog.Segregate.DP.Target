@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>NLog.Syslog.DP.Target</PackageId>
+    <Authors>Pavel Dmitrenko</Authors>
+    <Company></Company>
+    <Product>NLog.Syslog.DP.Target</Product>
+    <AssemblyName>NLog.Segregate.DP.Target</AssemblyName>
+    <RootNamespace>NLog.Segregate.DP.Target</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.4</Version>
+    <Description>Syslog target for NLog logging platform</Description>
+    <PackageProjectUrl>https://github.com/PavelDmitrenko/NLog.Syslog.DP.Target</PackageProjectUrl>
+    <PackageTags>Nlog Syslog</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.5.9" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Syslog\" />
+  </ItemGroup>
+
+</Project>
