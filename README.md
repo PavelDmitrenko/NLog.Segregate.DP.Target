@@ -1,6 +1,6 @@
 # NLog.Segregate.DP.Target
 
-### Writes nlog entries to separate files (one log item per file). Automatically creates zip-archive when log files count reaches defined in config value.
+### Writes nlog entries to separate files (one log entry per file). Automatically creates zip-archive when log files count reaches value defined in nlog.config.
 
 ## Dependencies
 + .NET Standart (>= 2.0)
@@ -14,7 +14,7 @@
 
 ## Settings
 **LogsDirectory**<br>
-Directory for logs
+Directory for logs<br><br>
 **FilesToArchive**<br>
 Auto-archiving occurs when files count reach FilesToArchive value
 
