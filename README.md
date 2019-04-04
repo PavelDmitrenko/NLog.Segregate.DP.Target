@@ -1,6 +1,6 @@
 # NLog.Segregate.DP.Target
 
-### Writes nlog entries to separate files (one log entry per file). Automatically creates zip-archive when log files count reaches value defined in nlog.config.
+### Extends functionality of base «FileTarget» module: writes nlog entries to separate files (one log entry per file). Automatically creates zip-archive when log files count reaches value defined in nlog.config.
 
 ## Dependencies
 + .NET Standart (>= 2.0)
