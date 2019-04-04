@@ -28,7 +28,10 @@ Auto-archiving occurs when files count reach FilesToArchive value
 	</extensions>
 	
 	<targets>
-		<target name="segregate" xsi:type="Segregate" logsDirectory="logs\" filesToArchive="5" layout="${message}" />
+		<target name="segregate" xsi:type="Segregate" 
+		        segregateFileName="logs\${longdate}.log" 
+		        segregateArchiveFileName="logs\${gdc:item=DeviceID}.${longdate}.zip" 
+		        filesToArchive="5" layout="${message}" />
 		<target name="logconsole" xsi:type="Console" />
 	</targets>
 
